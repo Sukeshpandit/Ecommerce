@@ -1,0 +1,99 @@
+.container {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 241, 240);
+}
+.Signup-container {
+    height: 70%;
+    width: 70%;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden
+}
+
+.Signup-image-container {
+    flex-shrink: 0;
+    width: 50%;
+    overflow: hidden
+}
+
+.Signup-image-container img {
+    height: 100%;
+}
+.Signup-form-container form {
+    max-width: 400px;
+}
+
+.form-sec {
+    margin-top: 85px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    background-color: rgba(223, 222, 222, 0.21);
+    max-height: 65px;
+}
+
+.inputSec{
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background-color:transparent;
+    color: rgb(124 119 119);
+}
+.inputSec:focus {
+    outline: none; 
+    box-shadow: none; 
+    border: none;
+    background-color:transparent;
+}
+
+.label {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(184, 183, 183);
+}
+.welcomeCont{
+    margin-top: 60px;
+}
+.welcomehead {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.welcomText {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+.bottomSec{
+    position: relative;
+    top: 85px;
+}
+.signupbtn {
+    padding: 30px 50px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    left: 35px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+}
+@media only screen and (min-width: 1000px) {
+    .login-image-container {
+        flex-shrink: 0;
+    width: 50%;
+    overflow: hidden
+    }
+}

@@ -1,0 +1,124 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 241, 240);
+}
+.login-container {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden
+}
+
+.login-image-container {
+    flex-shrink: 0;
+    width: 50%;
+    overflow: hidden
+}
+
+.login-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.login-form-container form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-sec {
+    margin-top: 85px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    background-color: rgba(223, 222, 222, 0.21);
+    max-height: 70px;
+}
+
+.inputSec{
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background-color:transparent;
+    color: rgb(124 119 119);
+}
+.inputSec:focus {
+    outline: none; 
+    box-shadow: none; 
+    border: none;
+    background-color:transparent;
+}
+
+.label {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(184, 183, 183);
+}
+
+.btn-primary {
+    padding: 10px;
+}
+
+.welcomehead {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 50px;
+}
+
+.welcomText {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.8rem;
+    position: relative;
+    top: 60px;
+}
+
+.bottomSec {
+    position: relative;
+    top: 77px;
+}
+
+.loginbtn {
+    padding: 30px 50px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    left: 35px;
+}
+@media only screen and (min-width: 1000px) {
+    .login-image-container {
+        flex-shrink: 0;
+    width: 50%;
+    overflow: hidden
+    }
+}

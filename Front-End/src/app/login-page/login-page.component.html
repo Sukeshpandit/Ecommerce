@@ -1,0 +1,60 @@
+<div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="login-container d-flex h-100">
+        <div class="login-image-container flex-shrink-1">
+            <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/Login/NikeShoes_1.jpg" class="d-block w-100" alt="Shoes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Login/cloths_1.jpg" class="d-block w-100" alt="cloths">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Login/Cloths_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Login/Shoe_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+        </div>
+        <div class="login-form-container d-flex align-items-center justify-content-center flex-column flex-grow-1">
+            <div class="welcomeCont">
+                <div class="fs-2 welcomehead">WELCOME BACK!</div>
+                <div class=".fs-6 welcomText">Login now to explore all the feature and to see what's new</div>
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-sec w-100" autocomplete="off">
+
+                <div class="form-group">
+                    <label for="email" class="px-2 label">Email</label>
+                    <input type="text" id="email" formControlName="email" class="form-control inputSec w-100" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="px-2 label">Password</label>
+                    <input type="password" id="password" formControlName="password" class="form-control inputSec w-100"
+                        required>
+                </div>
+                <a href="#" class="label d-flex justify-content-end">Forgot password?</a>
+                <div class="bottomSec d-flex align-items-center justify-content-between">
+                    <div class="regSec d-flex align-items-center justify-content-center flex-column">
+                        <span>Dont't have an account?</span>
+                        <a href="" class="label" style="text-decoration:none;">Register Now ><span
+                                style="color: rgb(127, 127, 127);">></span> <span
+                                style="color:rgb(87, 87, 87);">></span></a>
+                    </div>
+                    <button type="submit" class="btn btn-primary loginbtn" [disabled]="loginForm.invalid">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
