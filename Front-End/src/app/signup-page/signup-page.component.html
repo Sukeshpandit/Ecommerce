@@ -39,13 +39,33 @@
                 <div class="bottomSec d-flex align-items-center justify-content-between">
                     <div class="regSec d-flex align-items-center justify-content-center flex-column">
                         <span>Already have a account?</span>
-                        <a href="" class="label" style="text-decoration:none;">Login  <<span
+                        <a routerLink="/login" class="label" style="text-decoration:none;">Login  <<span
                                 style="color: rgb(127, 127, 127);"><</span> <span
                                 style="color:rgb(87, 87, 87);"><</span></a>
                     </div>
-                    <button type="submit" class="btn signupbtn" [disabled]="signupForm.invalid">Sign up</button>
+                    <button type="submit" class="btn signupbtn" data-bs-toggle="modal" data-bs-target="#otpModal" [disabled]="signupForm.invalid">Sign up</button>
                 </div>
             </form>
+        </div>
+    </div>
+    <!-- OTP Modal -->
+    <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="otpModalLabel">Enter OTP</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form (ngSubmit)="verifyOtp()">
+                <div class="mb-3">
+                <label for="otpInput" class="form-label">OTP</label>
+                <input type="text" class="form-control" id="otpInput" [(ngModel)]="otp" name="otp" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
         </div>
     </div>
 </div>
